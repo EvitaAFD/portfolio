@@ -1,0 +1,52 @@
+.heading-group-h1 {
+float: left;
+padding: 0 0 .2em 1em;
+}
+
+.fa-bars {
+font-size: 2.5em;
+float: right;
+}
+
+.main-nav-bar {
+padding: 0.1em;
+}
+
+.main-nav-bar ul {
+display: none;
+padding: 0;
+list-style: none;
+clear: both;
+}
+
+.main-nav-bar:hover ul {
+display: block;
+}
+
+.main-nav-bar li {
+margin-right: .4em;
+font-size: 1.5em;
+padding: .5em 2.5em;
+border-bottom: 1px solid #ccc;
+}
+
+@media only screen and (min-width: 825px) {
+
+.main-nav-bar {
+  padding: .2em .2em .2em 2em;
+}
+
+.main-nav-bar ul {
+  display: block;
+}
+
+.main-nav-bar ul li {
+  display: inline;
+  border-bottom: none;
+}
+
+.main-nav-bar ul li:hover a {
+  color: #29506D;
+}
+
+}
