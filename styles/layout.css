@@ -1,0 +1,33 @@
+
+  .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.heading-group-h1 {
+  max-width: 80%;
+  text-align: center;
+  font-size: 2em;
+  font-family: fantasy;
+}
+
+
+.tab-content {
+ font-size: 1em;
+
+}
+@media only screen and (min-width: 825px) {
+  .heading-group-h1 {
+    padding: .1em .1em .1em 2em;
+    float: none;
+  }
+  .my-name-nav {
+  float: none;
+
+  }
+
+  .tab-content {
+   float: none;
+
+  }
