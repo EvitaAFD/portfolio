@@ -1,26 +1,26 @@
 'use strict';
 
-var sourceData = []
+var sourceData = [
 
-{
-title: 'Music Guru',
-projectUrl: 'https://github.com/rrustia/music-guru',
-publishedOn: '2017-22-01',
-body: '<p>Enjoy this music trivia game!  This project gives you an opporutnity to listen to short clips of music and guess which song is correct from a list of options.  You will get immediate feedback on your answer and transtion through the game easily. I contributed heavily to the design and CSS components of this site. I worked on the functionality as well.</p>'
-},
+  {
+    title: 'Music Guru',
+    projectUrl: 'https://github.com/rrustia/music-guru',
+    publishedOn: '2017-01-22',
+    body: '<p>Enjoy this music trivia game!  This project gives you an opporutnity to listen to short clips of music and guess which song is correct from a list of options.  You will get immediate feedback on your answer and transtion through the game easily. I contributed heavily to the design and CSS components of this site. I worked on the functionality as well.</p>'
+  },
 
-{
-title: 'Salmon Cookies',
-projectUrl: 'https://github.com/EvitaAFD/cookie-stand',
-publishedOn: '2017-15-01',
-body: '<p>Project containing store front and store data page and weird cookies</p>'
+  {
+    title: 'Salmon Cookies',
+    projectUrl: 'https://github.com/EvitaAFD/cookie-stand',
+    publishedOn: '2017-01-15',
+    body: '<p>Project containing store front and store data page and weird cookies</p>'
+  },
 
-},
+  {
+    title: 'Bus Mall',
+    projectUrl: 'https://github.com/EvitaAFD/busmall',
+    publishedOn: '2017-01-3',
+    body: '<p>Shop for unique gifts on the bus!</p>'
 
-{
-title: 'Bus Mall',
-projectUrl: 'https://github.com/EvitaAFD/busmall',
-publishedOn: '2017-3-01',
-body: '<p>Shop for unique gifts on the bus!</p>'
-
-}
+  },
+];
