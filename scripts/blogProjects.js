@@ -13,14 +13,14 @@ body: '<p>Enjoy this music trivia game!  This project gives you an opporutnity t
 title: 'Salmon Cookies',
 projectUrl: 'https://github.com/EvitaAFD/cookie-stand',
 publishedOn: '2017-15-01',
-body: '<p></p>'
+body: '<p>Project containing store front and store data page and weird cookies</p>'
 
 },
 
 {
-title: '',
-projectUrl: '',
-publishedOn: '',
-body: '<p></p>'
+title: 'Bus Mall',
+projectUrl: 'https://github.com/EvitaAFD/busmall',
+publishedOn: '2017-3-01',
+body: '<p>Shop for unique gifts on the bus!</p>'
 
 }
