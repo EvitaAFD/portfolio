@@ -31,7 +31,7 @@ border-bottom: 1px solid #ccc;
 }
 
 .template {
-  visibility: hidden;
+  display:none;
 }
 
 @media only screen and (min-width: 825px) {

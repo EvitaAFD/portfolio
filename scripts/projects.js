@@ -21,7 +21,6 @@ Project.prototype.toHtml = function () {
   $newProject.find('time[pubdate]').attr('datetime', this.publishedOn);
   $newProject.find('time').text('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
   $newProject.append('<hr>');
-  console.log($newProject.html());
   return $newProject;
 };
 
@@ -31,5 +30,5 @@ sourceData.forEach(function(ele) {
 // console.log('sourceData ' + sourceData);
 
 allProjects.forEach(function(a){
-  $('#project').append(a.toHtml());
+  $('#projects').append(a.toHtml());
 });
