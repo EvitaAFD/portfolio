@@ -7,6 +7,7 @@ function Project (opts) {
 
   for(var key in opts){
     this[key] = opts[key];
+    console.log(this[key]);
   }
 }
 
@@ -16,7 +17,7 @@ Project.prototype.toHtml = function () {
 
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
   this.publishStatus = this.publishedOn ? `published ${this.daysAgo} days ago` : '(draft)';
-
+  console.log(template);
   return template(this);
 };
 
@@ -26,5 +27,5 @@ sourceData.forEach(function(ele) {
 // console.log('sourceData ' + sourceData);
 
 allProjects.forEach(function(a){
-  $('#projects').append(a.toHtml());
+  $('#project').append(a.toHtml());
 });
