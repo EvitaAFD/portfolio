@@ -13,7 +13,7 @@ function Project (opts) {
 
 Project.prototype.toHtml = function () {
 
-  var template = Handlebars.compile($('#article-template').html());
+  var template = Handlebars.compile($('#project-template').html());
 
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
   this.publishStatus = this.publishedOn ? `published ${this.daysAgo} days ago` : '(draft)';
@@ -27,5 +27,5 @@ sourceData.forEach(function(ele) {
 // console.log('sourceData ' + sourceData);
 
 allProjects.forEach(function(a){
-  $('#project').append(a.toHtml());
+  $('#projects').append(a.toHtml());
 });
