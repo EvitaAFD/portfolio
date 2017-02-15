@@ -12,4 +12,9 @@ projectsView.handleNavBar = function () {
 };
 
 
-projectsView.handleNavBar();
+projectsView.initProjectPage = function (){
+  Project.all.forEach(function (a){
+    $('#projects').append(a.toHtml())
+  });
+  projectsView.handleNavBar();
+}
