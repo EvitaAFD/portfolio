@@ -6,13 +6,13 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(./public));
+app.use(express.static('./public'));
 
 app.get('*'), function(request, response) {
   console.log('index.html to user');
   response.sendFile('./public/index.html', {root: '.'});
 };
 
-app.listen (PORT, function) {
-  console.log('This fantastic app is being server on localhost3000');
-}
+app.listen (PORT, function() {
+  console.log('This fantastic app is being server on localhost 3000');
+});
