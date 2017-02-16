@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "server.js file for running node server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvitaAFD/portfolio.git"
+  },
+  "keywords": [
+    "unicorn",
+    "node",
+    "glitter"
+  ],
+  "author": "Eve Denison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EvitaAFD/portfolio/issues"
+  },
+  "homepage": "https://github.com/EvitaAFD/portfolio#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
