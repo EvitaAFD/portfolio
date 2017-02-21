@@ -30,7 +30,6 @@ Project.loadAll = function(rawData) {
     Project.all.push(new Project(ele));
   })
 }
-// console.log('sourceData ' + sourceData);
 
 Project.fetchAll = function () {
   if(localStorage.sourceData) {
