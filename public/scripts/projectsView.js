@@ -17,5 +17,10 @@
     });
     projectsView.handleNavBar();
   }
+
+  projectsView.addWordCount = function () {
+    $('.words').text(Project.wordCount());
+  }
+
   module.projectsView = projectsView;
 })(window);

@@ -47,6 +47,13 @@
         console.log('Error:', err);
       });
     }
+    //added meaningless word count
+    Project.wordCount = () => {
+      let words = Project.all.map((e) => {
+        return e.body.split(' ').length;
+      }).reduce(function(acc, val){return acc + val; }, 0)
+      return words;
+    };
   };
   module.Project = Project;
 })(window);
