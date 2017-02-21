@@ -3,11 +3,6 @@ float: left;
 padding: 0 0 .2em 1em;
 }
 
-.fa-bars {
-font-size: 2.5em;
-float: right;
-}
-
 .main-nav-bar {
 padding: 0.1em;
 }
@@ -53,8 +48,5 @@ border-bottom: 1px solid #ccc;
   color: #29506D;
 }
 
-.fa-bars {
-  display: none;
-}
 
 }

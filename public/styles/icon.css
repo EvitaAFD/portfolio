@@ -1,0 +1,12 @@
+.fa-bars {
+font-size: 2.5em;
+float: right;
+}
+
+@media only screen and (min-width: 825px) {
+
+.fa-bars {
+  display: none;
+}
+
+}
