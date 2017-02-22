@@ -17,7 +17,6 @@
 
     this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
     this.publishStatus = this.publishedOn ? `published ${this.daysAgo} days ago` : '(draft)';
-    console.log(template);
     return template(this);
   };
 
@@ -32,28 +31,13 @@
     })
   }
 
-  Project.fetchAll = function () {
-    if(localStorage.sourceData) {
-      console.log('loading from local storage');
-      Project.loadAll(JSON.parse(localStorage.getItem('sourceData')));
-      projectsView.initProjectPage();
-    } else {
-      $.getJSON('data/portfolioProjects.json')
-      .then(function(data){
-        Project.loadAll(data);
-        localStorage.setItem('sourceData', JSON.stringify(data));
-        projectsView.initProjectPage();
-      }, function(err) {
-        console.log('Error:', err);
-      });
-    }
     //added meaningless word count
-    Project.wordCount = () => {
-      let words = Project.all.map((e) => {
-        return e.body.split(' ').length;
-      }).reduce(function(acc, val){return acc + val; }, 0)
-      return words;
-    };
+  Project.wordCount = () => {
+    let words = Project.all.map((e) => {
+      return e.body.split(' ').length;
+    }).reduce(function(acc, val){return acc + val; }, 0)
+    return words;
   };
+
   module.Project = Project;
 })(window);
