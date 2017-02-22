@@ -5,6 +5,7 @@
     Project.all.forEach(function (a) {
       $('#projects').append(a.toHtml());
     });
+    projectsView.addWordCount();
   };
   projectsView.addWordCount = function () {
     $('.words').text(Project.wordCount());
