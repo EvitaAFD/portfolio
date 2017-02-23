@@ -6,7 +6,7 @@ const express= require ('express');
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3333;
 
 const conString = 'postgres://localhost:5432';
 
@@ -20,5 +20,5 @@ app.get('/about', (request, response) => response.sendFile('index.html', {root: 
 
 
 app.listen (PORT, function() {
-  console.log('This fantastic app is being server on localhost 3000');
+  console.log('This fantastic app is being server on localhost 3333');
 });
