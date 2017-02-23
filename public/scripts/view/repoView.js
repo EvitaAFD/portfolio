@@ -4,10 +4,10 @@
   const repoView = {};
 
   const ui = function () {
-    let $about = $('#about');
+    let $projects = $('#projects');
 
-    $about.find('ul').empty();
-    $about.show().siblings().hide();
+    $projects.find('ul').empty();
+    $projects.show().siblings().hide();
   };
 
   repoView.index = function () {
@@ -15,7 +15,7 @@
 
     let render = Handlebars.compile($('#repo-template').text());
 
-    $('#about ul').append(
+    $('#projects ul').append(
       repos.with('name').map(render)
     );
   };

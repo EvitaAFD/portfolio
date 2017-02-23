@@ -11,27 +11,12 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
 
-    <script id="project-template" type="text/x-handlebars-template">
-      <article class="clearfix">
-       <header>
-          <h1><a href="{{projectUrl}}">{{title}}</a></h1>
-          <div class="byline">
-          published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>
-          </div>
-         </header>
-        <section class="project-body">{{{body}}}</section>
-       </article>
-     </script>
      <script id="repo-template" type="text/x-handlebars-template">
         <li>
           <a href="{{html_url}}" target="_blank"><h3>{{html_url}}</h3></a>
           <p>Description: {{description}}</p>
           <p>Language: {{language}}</p>
           <p>Created: {{created_at}}</p>
-          <p>Last updated: {{updated_at}}</p>
-          {{#if watchers_count}}
-            <p>{{watchers_count}} watching this repo</p>
-          {{/if}}
         </li>
       </script>
      </head>
@@ -68,6 +53,8 @@
   <!-- script files -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
   <script src="/vendor/scripts/page.js"></script>
+  <!-- github token -->
+  <script src="githubToken.js"></script>
   <!-- model scripts -->
   <script src="/scripts/model/projects.js"></script>
   <script src="/scripts/model/repo.js"></script>
