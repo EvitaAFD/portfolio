@@ -6,8 +6,8 @@
   const ui = function () {
     let $projects = $('#projects');
 
-    $projects.find('ul').empty();
-    $projects.show().siblings().hide();
+    $projects.empty();
+    $projects.show();
   };
 
   repoView.index = function () {
@@ -15,7 +15,7 @@
 
     let render = Handlebars.compile($('#repo-template').text());
 
-    $('#projects ul').append(
+    $('#projects').append(
       repos.with('name').map(render)
     );
   };

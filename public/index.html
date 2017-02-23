@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="styles/modules.css">
 
      <script id="repo-template" type="text/x-handlebars-template">
-        <li>
-          <a href="{{html_url}}" target="_blank"><h3>{{html_url}}</h3></a>
+        <section>
+          <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
           <p>Description: {{description}}</p>
           <p>Language: {{language}}</p>
           <p>Created: {{created_at}}</p>
-        </li>
+        </section>
       </script>
      </head>
     <body>
@@ -44,9 +44,6 @@
       </header>
       <p>Interdisciplinary art, Clinical social work, Being outside</p>
     </section>
-   <section id="word-count-home"></section>
-   <dt>Words: <dt><dd class = "words"></dd>
-  </section>
   </main>
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -59,7 +56,6 @@
   <script src="/scripts/model/projects.js"></script>
   <script src="/scripts/model/repo.js"></script>
   <!-- view scripts -->
-  <script src="/scripts/view/projectsView.js"></script>
   <script src="/scripts/view/repoView.js"></script>
   <!-- controllers -->
   <script src="/scripts/controllers/aboutController.js"></script>

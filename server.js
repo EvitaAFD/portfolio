@@ -15,10 +15,9 @@ client.connect();
 
 app.use(express.static('./public'));
 
-app.get('*'), function(request, response) {
-  console.log('index.html to user');
-  response.sendFile('./public/index.html', {root: '.'});
-};
+app.get('/', (request, response) => response.sendFile('index.html', {root: './public'}));
+app.get('/about', (request, response) => response.sendFile('index.html', {root: './public'}));
+
 
 app.listen (PORT, function() {
   console.log('This fantastic app is being server on localhost 3000');
