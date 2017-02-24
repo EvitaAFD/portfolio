@@ -4,7 +4,7 @@ const pg = require('pg');
 const express= require ('express');
 const app = express();
 const requestProxy = require('express-request-proxy');
-const PORT = process.env.PORT || 3333;
+const PORT = process.env.PORT || 3000;
 
 const conString = 'postgres://localhost:5432';
 
