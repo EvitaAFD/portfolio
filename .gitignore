@@ -66,6 +66,6 @@ tags
 githubToken.js
 
 # Vendor file
-./public/vendor
+public/vendor
 
 copied from 301 lab-01 with permission
