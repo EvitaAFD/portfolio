@@ -11,17 +11,14 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
 
-    <script id="project-template" type="text/x-handlebars-template">
-      <article class="clearfix">
-       <header>
-          <h1><a href="{{projectUrl}}">{{title}}</a></h1>
-          <div class="byline">
-          published <time pubdate datetime="2000-01-01">{{publishedOn}}</time>
-          </div>
-         </header>
-        <section class="project-body">{{{body}}}</section>
-       </article>
-     </script>
+     <script id="repo-template" type="text/x-handlebars-template">
+        <section>
+          <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
+          <p>Description: {{description}}</p>
+          <p>Language: {{language}}</p>
+          <p>Created: {{created_at}}</p>
+        </section>
+      </script>
      </head>
     <body>
     <nav class="main-nav-bar">
@@ -43,21 +40,23 @@
     <section id="about" class="nav-content clearfix">
       <header>
        <section>
-        <h1>About Me</h1>
+        <h2>About Me</h2>
       </header>
       <p>Interdisciplinary art, Clinical social work, Being outside</p>
     </section>
-   <section id="word-count-home"></section>
-   <dt>Words: <dt><dd class = "words"></dd>
-  </section>
   </main>
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <!-- script files -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
-  <script src="/scripts/model/projects.js"></script>
-  <script src="/scripts/view/projectsView.js"></script>
   <script src="/vendor/scripts/page.js"></script>
+  <!-- github token -->
+  <script src="githubToken.js"></script>
+  <!-- model scripts -->
+  <script src="/scripts/model/projects.js"></script>
+  <script src="/scripts/model/repo.js"></script>
+  <!-- view scripts -->
+  <script src="/scripts/view/repoView.js"></script>
   <!-- controllers -->
   <script src="/scripts/controllers/aboutController.js"></script>
   <script src="/scripts/controllers/projectController.js"></script>

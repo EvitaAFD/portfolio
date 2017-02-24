@@ -63,5 +63,9 @@ Session.vim
 
 # auto-generated tag files
 tags
+githubToken.js
+
+# Vendor file
+./public/vendor
 
 copied from 301 lab-01 with permission

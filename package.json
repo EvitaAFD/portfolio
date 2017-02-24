@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/EvitaAFD/portfolio#readme",
   "dependencies": {
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "pg": "^6.1.2"
   }
 }
